@@ -45,7 +45,7 @@ class RegisterForm(Form):
     email = StringField('Email', [validators.Length(min=6, max=50)])
     password = PasswordField('Password', [
         validators.DataRequired(),
-        validators.EqualTo('confirm', message='Password does not match')
+        validators.EqualTo('confirm', message='Passwords do not match')
     ])
     confirm = PasswordField('Confirm Password')
 
@@ -57,24 +57,27 @@ def register():
         name = form.name.data
         email = form.email.data
         username = form.username.data
-        password = sha256_crypt(str(form.password.data))
+        password = sha256_crypt.encrypt(str(form.password.data))
 
-        #Cursor
+        # Create cursor
         cur = mysql.connection.cursor()
 
+        # Execute query
         cur.execute("INSERT INTO users(name, email, username, password) VALUES(%s, %s, %s, %s)", (name, email, username, password))
 
-        #Commiting to Database
+        # Commit to DB
         mysql.connection.commit()
 
-        #Close the database
+        # Close connection
         cur.close()
-        flash("You are now registered and can log in", 'Success')
 
-        redirect(url_for('index'))
+        flash('You are now registered and can log in', 'success')
+
+        return redirect(url_for('index'))
     return render_template('register.html', form=form)
 
 
 
 if __name__ == '__main__':
+    app.secret_key='secret123'
     app.run(debug=True)
