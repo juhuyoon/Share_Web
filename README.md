@@ -18,8 +18,8 @@ python app.py
 ```
 
 ### What the App looks like:
-1) ![alt text](photos/main.jpg) "What the home page looks like"  
-2) ![alt text](photos/register.jpg) "Register on where the information will be stored in database"
-3) ![alt text](photos/database.jpg) "Password is encrypted with sha256 password so it cannot be shown"  
-4) ![alt text](photos/dashboard.jpg) "You will be taken to your dashboard after your registration/login"
-5) ![alt text](photos/article.jpg) "Add your articles on with edits available via CKeditor
+1)  "What the home page looks like"  ![alt text](photos/main.jpg)
+2) "Register on where the information will be stored in database"  ![alt text](photos/register.jpg) "
+3) "Password is encrypted with sha256 password so it cannot be shown"  ![alt text](photos/database.jpg)      
+4) "You will be taken to your dashboard after your registration/login"     ![alt text](photos/dashboard.jpg) 
+5)  "Add your articles on with edits available via CKeditor"  ![alt text](photos/article.jpg)
