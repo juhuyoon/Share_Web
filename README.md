@@ -2,7 +2,7 @@
 
 Fully Functional Data Storage App via CRUD functionality to store articles, hold authentication/login information, and can update your article pages.   
 
-###Primarily built with Flask's micro-framework   
+### Primarily built with Flask's micro-framework   
 
 Used Python 3.6, Software needed to run:  
 [Flask](http://flask.pocoo.org/docs/0.12/),  
