@@ -9,7 +9,7 @@ Used Python 3.6, Software needed to run:
 [Flask-WTF](https://wtforms.readthedocs.io/en/stable/),   
 [Passlib](https://passlib.readthedocs.io/en/stable/),  
 [MYSQL](https://dev.mysql.com/doc/),  
-[sha256 password](https://docs.python.org/2/library/hashlib.html)
+[sha256 password](https://docs.python.org/2/library/hashlib.html)  
 [ckeditor](https://ckeditor.com/)
 ### Running the app
 on your command line run:  
